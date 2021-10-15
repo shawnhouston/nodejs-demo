@@ -4,9 +4,9 @@ kind: Secret
 metadata:
   name: my-nodejs-postgresql-persistent
 stringData:
-  database-admin-password: BadPassW0rdAdmin
-  database-password: BadPassW0rd99
-  database-user: usera39
+  database-admin-password: "BadPassW0rdAdmin"
+  database-password: "BadPassW0rd99"
+  database-user: "usera39"
 ...
 ---
 apiVersion: v1
