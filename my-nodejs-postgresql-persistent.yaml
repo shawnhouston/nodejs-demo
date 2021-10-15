@@ -58,7 +58,7 @@ spec:
   postCommit: {}
   source:
     git:
-      uri: https://github.com/shawnhouston/my-nodejs-rest-http-crud.git
+      uri: https://github.com/shawnhouston/nodejs-demo.git
     type: Git
   strategy:
     sourceStrategy:
