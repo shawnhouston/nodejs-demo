@@ -165,7 +165,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgresql
   labels:
-    app: nodejs-test-app
+    appname: nodejs-test-app
 spec:
   accessModes:
   - ReadWriteOnce
