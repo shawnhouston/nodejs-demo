@@ -146,22 +146,6 @@ spec:
 ...
 ---
 apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: postgresql
-  labels:
-    app: nodejs-test-app
-spec:
-  accessModes:
-  - ReadWriteOnce
-  resources:
-    requests:
-      storage: 1Gi
-  storageClassName: ocs-storagecluster-ceph-rbd
-#  storageClassName: ocs-storagecluster-ceph-rbdmirror
-...
----
-apiVersion: v1
 kind: Service
 metadata:
   annotations:
