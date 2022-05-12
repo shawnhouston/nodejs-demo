@@ -196,7 +196,7 @@ spec:
       name: postgresql
     spec:
       securityContext:
-        runAsUser: 2000
+        runAsUser: 1000730001
       containers:
       - env:
         - name: POSTGRESQL_USER
