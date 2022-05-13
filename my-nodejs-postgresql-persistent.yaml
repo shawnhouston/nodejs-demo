@@ -181,6 +181,7 @@ spec:
 #metadata: 
 #  name: uid2000
 #...
+#oc adm policy add-scc-to-user anyuid -z uid2000 -n testme10 --context testme4
 ---
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
