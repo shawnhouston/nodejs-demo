@@ -175,6 +175,12 @@ spec:
 #  storageClassName: ocs-storagecluster-ceph-rbd
   storageClassName: ocs-storagecluster-ceph-rbdmirror
 ...
+#---
+#apiVersion: v1 
+#kind: ServiceAccount 
+#metadata: 
+#  name: uid2000
+#...
 ---
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
@@ -195,9 +201,7 @@ spec:
         name: postgresql
       name: postgresql
     spec:
-#      serviceAccountName: uid2000
-#      securityContext:
-#        runAsUser: 2000
+      serviceAccountName: uid2000
       containers:
       - env:
         - name: POSTGRESQL_USER
@@ -220,6 +224,8 @@ spec:
         - name: PGDATA
           value: "/var/lib/pgsql/data/pgdata"
         image: ' '
+        securityContext:
+          runAsUser: 2000
         livenessProbe:
           initialDelaySeconds: 30
           tcpSocket:
