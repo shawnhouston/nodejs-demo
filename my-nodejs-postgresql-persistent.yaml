@@ -201,7 +201,7 @@ spec:
         name: postgresql
       name: postgresql
     spec:
-      serviceAccountName: uid2000
+#      serviceAccountName: uid2000
       containers:
       - env:
         - name: POSTGRESQL_USER
@@ -224,8 +224,8 @@ spec:
         - name: PGDATA
           value: "/var/lib/pgsql/data/pgdata"
         image: ' '
-        securityContext:
-          runAsUser: 2000
+#        securityContext:
+#          runAsUser: 2000
         livenessProbe:
           initialDelaySeconds: 30
           tcpSocket:
