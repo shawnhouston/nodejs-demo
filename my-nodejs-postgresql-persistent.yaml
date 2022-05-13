@@ -196,9 +196,9 @@ spec:
       name: postgresql
     spec:
       serviceAccountName: uid2000
+      securityContext:
+        runAsUser: 2000
       containers:
-        securityContext:
-          runAsUser: 2000
       - env:
         - name: POSTGRESQL_USER
           valueFrom:
