@@ -172,8 +172,8 @@ spec:
   resources:
     requests:
       storage: 1Gi
-#  storageClassName: ocs-storagecluster-ceph-rbd
-  storageClassName: ocs-storagecluster-ceph-rbdmirror
+  storageClassName: ocs-storagecluster-ceph-rbd
+#  storageClassName: ocs-storagecluster-ceph-rbdmirror
 ...
 #---
 #apiVersion: v1 
